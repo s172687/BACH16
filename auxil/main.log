@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.14)  4 FEB 2025 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.14)  4 APR 2025 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -511,28 +511,36 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
+) (C:\Users\moeve\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'norsk'.
- (C:/Users\moeve\PycharmProjects\BACH16\auxil\main.aux)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+6.
+
+(C:\Users\moeve\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(C:/Users\moeve\PycharmProjects\BACH16\auxil\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 Package biblatex Info: Trying to load language 'norsk' -> 'norsk-apa'...
 Package biblatex Info: ... file 'norsk-apa.lbx' found.
 
@@ -558,8 +566,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (C:/Users\moeve\PycharmProjects\BACH16\auxil\main.bbl)
-Package biblatex Info: Reference section=0 on input line 23.
-Package biblatex Info: Reference segment=0 on input line 23.
+Package biblatex Info: Reference section=0 on input line 26.
+Package biblatex Info: Reference segment=0 on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -624,7 +632,7 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
-LaTeX Warning: Citation 'testreferanse' on page 1 undefined on input line 27.
+LaTeX Warning: Citation 'testreferanse' on page 1 undefined on input line 30.
 
 (A FORORD/Forord.tex
 <0 FIGURER/sinus.pdf, id=1, 462.52798pt x 346.89601pt>
@@ -632,16 +640,27 @@ File: 0 FIGURER/sinus.pdf Graphic file (type pdf)
 <use 0 FIGURER/sinus.pdf>
 Package pdftex.def Info: 0 FIGURER/sinus.pdf  used on input line 11.
 (pdftex.def)             Requested size: 236.01561pt x 177.01518pt.
+File: 0 FIGURER/sinus.pdf Graphic file (type pdf)
+<use 0 FIGURER/sinus.pdf>
+Package pdftex.def Info: 0 FIGURER/sinus.pdf  used on input line 19.
+(pdftex.def)             Requested size: 236.01561pt x 177.01518pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (1 TABELLER/tabell1.tex)
 
-LaTeX Warning: Empty bibliography on input line 34.
+LaTeX Warning: Empty bibliography on input line 39.
 
 
 
 [1
 
-{C:/Users/moeve/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./0 FIGURER/
-sinus.pdf>] (C:/Users\moeve\PycharmProjects\BACH16\auxil\main.aux)
+{C:/Users/moeve/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/moev
+e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./0 FIGURER/sinus
+.pdf>]
+
+[2] (C:/Users\moeve\PycharmProjects\BACH16\auxil\main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -660,22 +679,20 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14287 strings out of 473536
- 269273 string characters out of 5714956
- 1184067 words of memory out of 5000000
- 37371 multiletter control sequences out of 15000+600000
- 564823 words of font info for 57 fonts, out of 8000000 for 9000
+ 14352 strings out of 473536
+ 270474 string characters out of 5714956
+ 1184289 words of memory out of 5000000
+ 37423 multiletter control sequences out of 15000+600000
+ 573710 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,8n,84p,695b,2799s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/moeve/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/moeve/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr12.pfb><C:/Users/moeve/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb><C:/Users/moeve/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr8.pfb>
-Output written on C:/Users\moeve\PycharmProjects\BACH16\out\main.pdf (1 page, 6
-5411 bytes).
+<C:/Users/moeve/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pf
+b><C:/Users/moeve/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pf
+b>
+Output written on C:/Users\moeve\PycharmProjects\BACH16\out\main.pdf (2 pages, 
+40864 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
