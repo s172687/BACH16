@@ -1,41 +1,129 @@
 %! Author = moeve
 %! Date = 22.01.2025
 
-% Preamble
 \documentclass[12pt, norsk]{article}
 
-\input{Z Nyttig/apabib}
-
-% Packages
+% Pakker
+\usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{babel}
 \usepackage{caption}
+\usepackage{colortbl}
+\usepackage{csquotes}
+\usepackage{fancyhdr}
+\usepackage{gauss}
 \usepackage{geometry}
 \usepackage{graphicx}
-\usepackage{graphics}
-% \usepackage{mathptmx}
-% \usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{nicefrac}
+\usepackage{pdfpages}
+\usepackage{physics}
+\usepackage{ragged2e}
+\usepackage{scalerel}
+\usepackage{subcaption}
 \usepackage{times}
+\usepackage{url}
+\usepackage{wasysym}
+\usepackage{wrapfig}
+\usepackage{xcolor}
 
+
+% Margstørrelser. Gitt av Diego
 \geometry{left=25mm, bottom=25mm, 
 right=25mm, top=25mm}
-% Document
-\title{BYTS3900 Bacheloroppgave \\ BACH 16\\SOFiSTiK \& Python}
-\author{Martin Øvergård, Espen Karlsen, Antonio Kaelin\\OsloMet - storbyuniversitet}
-\date{våren 2025}
+
+% Store romertall som sidetall de første sidene
+\pagenumbering{Roman}
+
+% Sidetallene skal være nedre høyre
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}   % Ingen linje på toppen
+\fancyhead{}   % "Frigjør" headerne
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+% Inputter forskjellige ting som trengs
+\input{Z Nyttig/apabib}
+\input{Z Nyttig/commands}
+\input{Z Nyttig/Pythonoppsett}
+
+
+
+
+% Dokumentet
 \begin{document}
 
-\maketitle
+% Forsiden. Må prøve å gjøre mere latexvennlig. enn så lenge PDF fra Word
+\includepdf[pages=-]{3 PDFS/BSc-oppgave.pdf}
 
-Hei. Jeg refererer til denne kilden! \parencite[s. 27]{testreferanse}
-
+% Forord
 \input{A FORORD/Forord}
-Noen lurer på hvor lang tid kompileringen tar? Hmm
+\newpage
 
-\input{1 TABELLER/tabell1}
+% Sammendrag
+\input{B SAMMENDRAG/Sammendrag}
+\newpage
 
+% Abstract
+\input{B SAMMENDRAG/Abstract}
+\section*{Innholdsfortegnelse..}
+\section*{Liste over forkortelser, symboler, figurer og tabeller evt.}
+\newpage
 
+% Hoveddel. Arabiske tall
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
+% Innledning
+\input{C INNLEDNING/Innledning}
+\input{C INNLEDNING/Bakgrunn}
+\input{C INNLEDNING/Avgrensninger}
+\newpage
+
+% Teori
+\input{D TEORI/Teori}
+\input{D TEORI/modalanalyse}
+\input{D TEORI/ANN}
+\newpage
+
+% Metode
+\input{F METODE/Metode}
+\input{F METODE/SOFiSTIK_in_Python}
+\input{F METODE/ANN-kode}
+\newpage
+
+% Case study
+\input{E CASE STUDY/CaseStudy}
+\newpage
+
+% Resultater
+\input{G RESULTATER/Resultater}
+\newpage
+
+% Diskusjon
+\input{H DISKUSJON/Diskusjon}
+\newpage
+
+% Konklusjon
+\input{I KONKLUSJONER/Konklusjoner}
+
+% Bibliofi APA 7
 \printbibliography
+\newpage
 
+% Vedlegg. Små romanske tall
+\pagenumbering{roman}
+\setcounter{page}{1}
+\appendix
+
+% Vedleggene
+\input{K VEDLEGG/vedlegg1}
+
+% Ferdig
 \end{document}

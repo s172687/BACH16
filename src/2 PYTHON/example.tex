@@ -1,0 +1,33 @@
+\begin{lstlisting}[language=Python, caption={Pythonkode, minimering}]
+import numpy as np
+
+"""
+MINIMERING AV FUNKSJON
+"""
+
+L = 1  # For å uttrykket til å bli uttrykt som Mp / L
+mp = 1  # For å uttrykket til å bli uttrykt som Mp / L
+x = np.linspace(0, L - 0.0001, 100000)  # Trekker fra litt fra L slik at man ikke deler på 0 når x = L
+
+teller = 2 * L - x
+nevner = (4 * x - L) * (L - x)
+konstantforan = 8 * mp / L
+
+# Beregner uttrykket
+uttrykk = konstantforan * teller / nevner
+
+# Filtrerer ut kun positive verdier, da q i beregningene antas å gjøre positivt arbeid
+maske = uttrykk > 0
+positive_verdier = uttrykk[maske]
+positive_x = x[maske]
+
+# Finner den minste positive verdien og tilhørende x
+minsteverdi_indeks = np.argmin(positive_verdier)
+minsteverdi = positive_verdier[minsteverdi_indeks]
+x_ved_minsteverdi = positive_x[minsteverdi_indeks]
+
+print(f'Den laveste (positive verdien) er {minsteverdi:.6f} Mp/L^2 for x = {x_ved_minsteverdi:.6f} L')
+
+print('Hello, world!')
+
+\end{lstlisting}
