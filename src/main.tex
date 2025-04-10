@@ -8,13 +8,15 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{array}
 \usepackage{babel}
-\usepackage{caption}
+\usepackage[font=it, singlelinecheck=false]{caption}
 \usepackage{colortbl}
 \usepackage{csquotes}
 \usepackage{fancyhdr}
 \usepackage{gauss}
 \usepackage{geometry}
+\usepackage{gillius}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{listings}
@@ -27,58 +29,56 @@
 \usepackage{ragged2e}
 \usepackage{scalerel}
 \usepackage{subcaption}
+\usepackage{svg}
+\usepackage{tcolorbox}
 \usepackage{times}
+\usepackage{titling}
 \usepackage{url}
 \usepackage{wasysym}
 \usepackage{wrapfig}
 \usepackage{xcolor}
 
-
-% Margstørrelser. Gitt av Diego
-\geometry{left=25mm, bottom=25mm, 
-right=25mm, top=25mm}
-
-% Store romertall som sidetall de første sidene
-\pagenumbering{Roman}
-
-% Sidetallene skal være nedre høyre
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}   % Ingen linje på toppen
-\fancyhead{}   % "Frigjør" headerne
-\fancyfoot{}
-\fancyfoot[R]{\thepage}
-
-% Inputter forskjellige ting som trengs
+% VIKTIGE INPUTS
 \input{Z Nyttig/apabib}
 \input{Z Nyttig/commands}
 \input{Z Nyttig/Pythonoppsett}
 
+\geometry{left=25mm,   % Margstørrelser. Gitt av Diego  
+          bottom=25mm, 
+          right=25mm, 
+          top=25mm}
 
 
+\begin{document}       % Dokumentet
 
-% Dokumentet
-\begin{document}
+\begin{titlepage}      % Forsiden.
+\input{Z Nyttig/forside}
+\end{titlepage}
 
-% Forsiden. Må prøve å gjøre mere latexvennlig. enn så lenge PDF fra Word
-\includepdf[pages=-]{3 PDFS/BSc-oppgave.pdf}
 
-% Forord
-\input{A FORORD/Forord}
+\pagenumbering{Roman}   % Store romertall som sidetall de første sidene
+\pagestyle{fancy}       % fancystyle 
+\renewcommand{\headrulewidth}{0pt}   % Ingen linje på toppen
+\fancyhead{}            % "Frigjør" headerne
+\fancyfoot{}
+\fancyfoot[R]{\thepage} % Nede til høyre/Right
+\normalfont             % Fra gillius til TNR
+
+\input{A FORORD/Forord} % Forord
 \newpage
 
-% Sammendrag
-\input{B SAMMENDRAG/Sammendrag}
+\input{B SAMMENDRAG/Sammendrag} % Sammendrag
 \newpage
 
-% Abstract
-\input{B SAMMENDRAG/Abstract}
-\section*{Innholdsfortegnelse..}
+\input{B SAMMENDRAG/Abstract}   % Abstract 
+\tableofcontents % Innholdsfortegnelse
 \section*{Liste over forkortelser, symboler, figurer og tabeller evt.}
+\listoffigures   % Figurer
+\listoftables    % Tabeller
 \newpage
 
-% Hoveddel. Arabiske tall
-\pagenumbering{arabic}
-\setcounter{page}{1}
+\pagenumbering{arabic} % Hoveddel. Arabiske tall
+\setcounter{page}{1}   % Teller fra 1
 
 % Innledning
 \input{C INNLEDNING/Innledning}
@@ -117,13 +117,10 @@ right=25mm, top=25mm}
 \printbibliography
 \newpage
 
-% Vedlegg. Små romanske tall
-\pagenumbering{roman}
-\setcounter{page}{1}
+% Vedlegg
+\pagenumbering{roman} % Små romerske tall-
+\setcounter{page}{1}  % Teller fra 1
 \appendix
-
-% Vedleggene
 \input{K VEDLEGG/vedlegg1}
 
-% Ferdig
-\end{document}
+\end{document} % Ferdig
