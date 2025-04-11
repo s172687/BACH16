@@ -10,7 +10,7 @@
 \usepackage{amsthm}
 \usepackage{array}
 \usepackage{babel}
-\usepackage[font=it, singlelinecheck=false]{caption}
+\usepackage[font=it]{caption}
 \usepackage{colortbl}
 \usepackage{csquotes}
 \usepackage{fancyhdr}
@@ -19,6 +19,7 @@
 \usepackage{gillius}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{lipsum}
 \usepackage{listings}
 \usepackage{mathtools}
 \usepackage{multicol}
@@ -28,8 +29,10 @@
 \usepackage{physics}
 \usepackage{ragged2e}
 \usepackage{scalerel}
+\usepackage{setspace}
 \usepackage{subcaption}
 \usepackage{svg}
+\usepackage{tabularx}
 \usepackage{tcolorbox}
 \usepackage{times}
 \usepackage{titling}
@@ -46,15 +49,13 @@
 \geometry{left=25mm,   % Margstørrelser. Gitt av Diego  
           bottom=25mm, 
           right=25mm, 
-          top=25mm}
-
+          top=25mm} 
 
 \begin{document}       % Dokumentet
 
 \begin{titlepage}      % Forsiden.
 \input{Z Nyttig/forside}
 \end{titlepage}
-
 
 \pagenumbering{Roman}   % Store romertall som sidetall de første sidene
 \pagestyle{fancy}       % fancystyle 
@@ -63,6 +64,7 @@
 \fancyfoot{}
 \fancyfoot[R]{\thepage} % Nede til høyre/Right
 \normalfont             % Fra gillius til TNR
+\setstretch{1.15}       % Linjeavstand 1.15
 
 \input{A FORORD/Forord} % Forord
 \newpage
@@ -72,7 +74,7 @@
 
 \input{B SAMMENDRAG/Abstract}   % Abstract 
 \tableofcontents % Innholdsfortegnelse
-\section*{Liste over forkortelser, symboler, figurer og tabeller evt.}
+\section*{Liste over forkortelser/symboler/forklaringer}
 \listoffigures   % Figurer
 \listoftables    % Tabeller
 \newpage
@@ -118,7 +120,7 @@
 \newpage
 
 % Vedlegg
-\pagenumbering{roman} % Små romerske tall-
+\pagenumbering{roman} % Små romerske tall.
 \setcounter{page}{1}  % Teller fra 1
 \appendix
 \input{K VEDLEGG/vedlegg1}

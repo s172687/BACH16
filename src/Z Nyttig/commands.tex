@@ -1,12 +1,17 @@
-\newcommand{\doubleSignature}[5]{
-\begin{tabular}{lll}
-\rule{5.5cm}{1pt} & \phantom{\rule{5.5cm}{1pt}}&  \\
-#1, #2 & & \\ 
-& & \\ 
-& & \\ 
-& & \\ 
-    \rule{4cm}{1pt} & \rule{4cm}{1pt} & \rule{4cm}{1pt} \\
-    #3 & #4 & #5
-\end{tabular}
+\newcommand{\signatur}[5]{
+\noindent
+\begin{tabularx}{\textwidth}{X X X X}
+\rule{4cm}{1pt} &  & \\
+#1, #2 & & 
+\end{tabularx}
+
 \vspace{1cm}
+\noindent
+\begin{tabularx}{\textwidth}{X X X }
+\rule{4cm}{1pt} & \rule{4cm}{1pt} & \rule{4cm}{1pt} \\
+#3 & #4 & #5
+\end{tabularx}
 }
+
+
+
